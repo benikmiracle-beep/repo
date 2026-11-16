@@ -11,6 +11,8 @@
   align-items: center;
   justify-content: space-between;
   height: 4rem;
+  width: calc(100% - 5px);
+  margin: 0 auto;
 }
 
 .mark {

@@ -15,9 +15,9 @@ img {
 }
 
 .wrap {
-  max-width: 1040px;
+  max-width: 1095px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 5px;
 }
 
 .skip {

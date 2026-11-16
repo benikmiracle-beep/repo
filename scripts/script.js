@@ -1,6 +1,12 @@
 const btn = document.querySelector('.menu-btn');
 const nav = document.getElementById('nav');
 
+document.querySelectorAll('[data-fallback-hide]').forEach((img) => {
+  img.addEventListener('error', () => {
+    img.classList.add('is-missing');
+  });
+});
+
 if (btn && nav) {
   btn.addEventListener('click', () => {
     const open = nav.classList.toggle('open');
