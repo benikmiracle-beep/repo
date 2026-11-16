@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Benik Miracle — Developer</title>
+  <meta name="description" content="Benik Miracle is a final-year student and web developer from Owerri, Nigeria, building clean, responsive websites with HTML, CSS and JavaScript." />
+  <script>
+    (function () {
+      var t;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'dark' && t !== 'light') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <link rel="icon" href="images/bm-solid-light.svg" type="image/svg+xml" />
+  <link rel="icon" href="images/bm-solid-light.svg" sizes="32x32" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="images/bm-solid-light.svg" />
+  <link rel="stylesheet" href="styles/head.css" />
+  <link rel="stylesheet" href="styles/body.css" />
+  <link rel="stylesheet" href="styles/nav.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="mark" href="#top" aria-label="Benik Miracle, home">
+        <img class="for-light" src="images/bm-solid-light.svg" alt="BM" width="36" height="36" />
+        <img class="for-dark" src="images/bm-solid-dark.svg" alt="BM" width="36" height="36" />
+      </a>
+      <nav id="nav" class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a class="nav-cta" href="#contact">Let's talk</a>
+      </nav>
+      <div class="tools">
+        <button class="theme-btn" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <img class="ic for-light" src="icons/light-theme/moon.svg" alt="" width="18" height="18" />
+          <img class="ic for-dark" src="icons/dark-theme/sun.svg" alt="" width="18" height="18" />
+        </button>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div>
+        <div class="hero-logo">
+          <img class="for-light" src="images/bm-lockup-light.svg" alt="Benik Miracle, web developer" width="210" height="44" />
+          <img class="for-dark" src="images/bm-lockup-dark.svg" alt="Benik Miracle, web developer" width="210" height="44" />
+        </div>
+        <h1>I build clean, responsive websites.</h1>
+        <p class="lead">I'm Benik Miracle, a web developer from Owerri, Nigeria. I design and build websites with HTML, CSS and JavaScript for people and businesses.</p>
+        <div class="actions">
+          <a class="btn solid" href="#projects">View my work<img class="ic for-light" src="icons/light-theme/arrow-right.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/arrow-right.svg" alt="" width="18" height="18" /></a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <dl class="now">
+        <div><dt>Based in</dt><dd>Owerri, Nigeria</dd></div>
+        <div><dt>Studying</dt><dd>Computer and Robotic Education</dd></div>
+        <div><dt>Builds with</dt><dd>HTML, CSS, JavaScript</dd></div>
+        <div><dt>Work</dt><dd>Freelance web development</dd></div>
+      </dl>
+    </section>
+
+    <section class="wrap sec" id="about">
+      <h2><span>01</span> About</h2>
+      <div class="prose">
+        <p>I'm a final-year Computer and Robotic Education student at Alvan Ikoku Federal University of Education, Owerri, and a self-taught web developer. I started with HTML and CSS, then added JavaScript, and I care about layouts that are tidy, readable and work as well on a phone as on a laptop.</p>
+        <p>I work under my own name, and I'm still learning and improving with every project I build.</p>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="skills">
+      <h2><span>02</span> Skills</h2>
+      <div class="skills">
+        <div><h3><img class="ic for-light" src="icons/light-theme/code.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/code.svg" alt="" width="18" height="18" />Front end</h3><p>HTML5, CSS3, JavaScript, responsive layout</p></div>
+        <div><h3><img class="ic for-light" src="icons/light-theme/git-branch.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/git-branch.svg" alt="" width="18" height="18" />Version control</h3><p>Git and GitHub</p></div>
+        <div><h3><img class="ic for-light" src="icons/light-theme/trending-up.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/trending-up.svg" alt="" width="18" height="18" />Always improving</h3><p>JavaScript, layout and design skills</p></div>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="projects">
+      <h2><span>03</span> Projects</h2>
+      <article class="project">
+        <div class="shot"><img src="images/chuks-fashion.jpg" alt="Screenshot of the Chuks Fashion website" loading="lazy" onerror="this.style.display='none'" /></div>
+        <div class="info">
+          <h3>Chuks Fashion</h3>
+          <p class="tech">HTML · CSS · JavaScript</p>
+          <p>A website for Chuks Fashion, a made-to-measure menswear brand in Owerri, with a catalog and WhatsApp contact.</p>
+          <p class="links"><a href="https://benikmiracle-beep.github.io/chuks_fashion/" target="_blank" rel="noopener">Live demo<img class="ic for-light" src="icons/light-theme/arrow-up-right.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/arrow-up-right.svg" alt="" width="18" height="18" /></a><a href="https://github.com/benikmiracle-beep/chuks_fashion" target="_blank" rel="noopener"><img class="ic for-light" src="icons/light-theme/github.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/github.svg" alt="" width="18" height="18" />GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="shot"><img class="for-light" src="images/todo-light.png" alt="Screenshot of the Todo App dashboard" loading="lazy" onerror="this.style.display='none'" /><img class="for-dark" src="images/todo-dark.png" alt="Screenshot of the Todo App dashboard" loading="lazy" onerror="this.style.display='none'" /></div>
+        <div class="info">
+          <h3>Todo App</h3>
+          <p class="tech">HTML · CSS · JavaScript</p>
+          <p>Doable, a task dashboard with Today, Upcoming and Completed views, a productivity tracker, and light and dark themes.</p>
+          <p class="links"><a href="https://benikmiracle-beep.github.io/Todo-App/" target="_blank" rel="noopener">Live demo<img class="ic for-light" src="icons/light-theme/arrow-up-right.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/arrow-up-right.svg" alt="" width="18" height="18" /></a><a href="https://github.com/benikmiracle-beep/Todo-App" target="_blank" rel="noopener"><img class="ic for-light" src="icons/light-theme/github.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/github.svg" alt="" width="18" height="18" />GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="shot"><img class="for-light" src="images/portfolio-light.png" alt="Screenshot of this portfolio website" loading="lazy" onerror="this.style.display='none'" /><img class="for-dark" src="images/portfolio-dark.png" alt="Screenshot of this portfolio website" loading="lazy" onerror="this.style.display='none'" /></div>
+        <div class="info">
+          <h3>This Portfolio</h3>
+          <p class="tech">HTML · CSS · JavaScript</p>
+          <p>The site you are on now: my personal portfolio, built from scratch with light and dark themes.</p>
+          <p class="links"><a href="https://benikmiracle-beep.github.io/port/" target="_blank" rel="noopener">Live site<img class="ic for-light" src="icons/light-theme/arrow-up-right.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/arrow-up-right.svg" alt="" width="18" height="18" /></a><a href="https://github.com/benikmiracle-beep/port" target="_blank" rel="noopener"><img class="ic for-light" src="icons/light-theme/github.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/github.svg" alt="" width="18" height="18" />GitHub</a></p>
+        </div>
+      </article>
+    </section>
+
+    <section class="wrap sec" id="services">
+      <h2><span>04</span> Services</h2>
+      <div class="skills">
+        <div><h3><img class="ic for-light" src="icons/light-theme/layout.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/layout.svg" alt="" width="18" height="18" />Website design and build</h3><p>Websites for businesses and brands, built from scratch with HTML, CSS and JavaScript.</p></div>
+        <div><h3><img class="ic for-light" src="icons/light-theme/smartphone.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/smartphone.svg" alt="" width="18" height="18" />Responsive layouts</h3><p>Pages that read and work well on phones, tablets and desktops.</p></div>
+        <div><h3><img class="ic for-light" src="icons/light-theme/pointer.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/pointer.svg" alt="" width="18" height="18" />Interactive features</h3><p>Useful JavaScript features, like the task handling in the Todo App.</p></div>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="contact">
+      <h2><span>05</span> Contact</h2>
+      <p class="lead">Have a project in mind, or want to work together? Message me on WhatsApp or send an email.</p>
+      <div class="actions">
+        <a class="btn solid" href="https://wa.me/2347042194815?text=Hi%20Benik%2C%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener"><img class="ic for-light" src="icons/light-theme/whatsapp.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/whatsapp.svg" alt="" width="18" height="18" />Chat on WhatsApp</a>
+        <a class="btn" href="mailto:benikmiracle@gmail.com"><img class="ic for-light" src="icons/light-theme/mail.svg" alt="" width="18" height="18" /><img class="ic for-dark" src="icons/dark-theme/mail.svg" alt="" width="18" height="18" />Send an email</a>
+      </div>
+      <p class="reach">WhatsApp: +234 704 219 4815<br>Email: <a href="mailto:benikmiracle@gmail.com">benikmiracle@gmail.com</a><br>GitHub: <a href="https://github.com/benikmiracle-beep" target="_blank" rel="noopener">benikmiracle-beep</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap">© 2026 Benik Miracle</div></footer>
+
+  <script src="scripts/script.js" defer></script>
+</body>
+</html>

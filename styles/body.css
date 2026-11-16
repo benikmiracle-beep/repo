@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 1rem/1.65 var(--sans);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrap {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+  background: var(--ink);
+  color: #fff;
+  padding: .5rem 1rem;
+  z-index: 100;
+}
+
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+.site-footer {
+  margin-top: 5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.reach {
+  margin: 2rem 0 0;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.reach a {
+  color: var(--ink);
+  text-underline-offset: 4px;
+  text-decoration-color: var(--line);
+}
+
+.reach a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+.for-dark {
+  display: none;
+}
+
+:root[data-theme="dark"] .for-light {
+  display: none;
+}
+
+:root[data-theme="dark"] .for-dark {
+  display: block;
+}
+
+.mark {
+  display: block;
+  line-height: 0;
+}
+
+.mark img {
+  width: 36px;
+  height: 36px;
+}
+
+.hero-logo {
+  margin: 0 0 1.75rem;
+}
+
+.hero-logo img {
+  height: 3.25rem;
+  width: auto;
+}
+
+:root[data-theme="dark"] .shot img.for-dark {
+  filter: none;
+}
+
+.ic {
+  width: 1.1em;
+  height: 1.1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+
+.btn.solid .ic {
+  filter: invert(1);
+}
+
+.btn:not(.solid):hover .ic {
+  filter: invert(1);
+}
+
+.theme-btn .ic {
+  width: 18px;
+  height: 18px;
+}
